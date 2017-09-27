@@ -11,5 +11,5 @@ datetime <- strptime(paste(relevant_data$Date, relevant_data$Time, sep=" "), "%d
 
 png(file = "plot2.png", bg = "transparent",width = 480, height = 480)
 plot(datetime, relevant_data$Global_active_power,  xlab ="Weekdays", ylab="Global Active Power (kilowatts)", lty=1, pch=".")
-lines(datetime, relevant_data$Global_active_power,  xlab ="Weekdays", ylab="Global Active Power (kilowatts)", lty=1, pch=".")
+lines(datetime, relevant_data$Global_active_power,  lty=1, pch=".")
 dev.off()
